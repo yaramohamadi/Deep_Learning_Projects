@@ -133,7 +133,7 @@ In this part of the project I encorporated the idea of InfoGAN inside BigBiGAN b
 
 For evaluation, I reported FID and Inception Score. Also, I needed to perform Hungarian Matching, to find the true mapping between the reconstructed classes in the classification head and the true classes. (Each class is a worker, and each predicted C is a job, the cost of a job-worker pair is the number of rows that they both appear together (But negative since its a cost).)
 
-***The proposed architecture of InfoGAN on the BigBiGAN architecture:  *** 
+***The proposed architecture of InfoGAN on the BigBiGAN architecture:*** 
 
 <img src="imgs/infogan.png" data-canonical-src="imgs/infogan.png" width="400" />
 
