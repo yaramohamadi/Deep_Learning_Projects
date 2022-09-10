@@ -2,7 +2,7 @@ Visual Question Answering aims to answer textual questions from images. The aim 
 In this project I create simple image-question pairs in the Cifar10 dataset and perform visual question answering on the created dataset.
 
 ### Dataset creation
-The questions are very simple, they either ask ```Is this a [Object class existing in the image]``` or ```Is this a [Random object class not existing in the image]``` and the answers are YES and NO.
+The questions are very simple, they either ask ```Is this a [Object class existing in the image]?``` or ```Is this a [Random object class not existing in the image]?``` and the answers are YES and NO.
 I created this dataset in this project and performed Visual Question Answering.
 
 ### Model
