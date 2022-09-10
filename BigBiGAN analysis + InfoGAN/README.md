@@ -3,7 +3,7 @@ In [BiGAN](https://arxiv.org/abs/1605.09782) paper, an extra encoder was trained
 
 In the first part of this project, I performed an in depth analysis of the elements present in BigBiGAN's loss function (See the figure below). 
 
-<img src="imgs/bigbiganloss.png" data-canonical-src="imgs/bigbiganloss.png" width="200" />
+<img src="imgs/bigbiganloss.png" data-canonical-src="imgs/bigbiganloss.png" height="200" />
 
 I used the MNIST dataset and tried turning off each of the loss elements Sx, Sz, and Sxz, hence gaining an intuition on the effect of each one in the final performance.
 
