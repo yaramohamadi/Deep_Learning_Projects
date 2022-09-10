@@ -14,13 +14,13 @@ The learning is very unstable in this configuration. In some epochs, the generat
 
 ***Reconstructed images of each epoch:***
 
-<img src="imgs/nosx_nosz.png" data-canonical-src="imgs/nosx_nosz.png" height="200" />
+<img src="imgs/nosx_nosz.png" data-canonical-src="imgs/nosx_nosz.png" width="400" />
 
 The model is producing random data throughout its learning.
 
 ***Random generated images from a batch:***
 
-<img src="imgs/nosx_nosz_results.png" data-canonical-src="imgs/nosx_nosz_results.png" height="200" />
+<img src="imgs/nosx_nosz_results.png" data-canonical-src="imgs/nosx_nosz_results.png" width="400" />
 
 The images are at most different in a few pixels.
 FID is 126.579 which is very large.
@@ -34,11 +34,11 @@ The results are a little better in this configuration. However, Sx is the most i
 
 ***Reconstructed images of each epoch:***
 
-<img src="imgs/nosx_sz.png" data-canonical-src="imgs/nosx_sz.png" height="200" />
+<img src="imgs/nosx_sz.png" data-canonical-src="imgs/nosx_sz.png" width="400" />
 
 ***Random generated images from a batch:***
 
-<img src="imgs/nosx_sz_results.png" data-canonical-src="imgs/nosx_sz_results.png" height="200" />
+<img src="imgs/nosx_sz_results.png" data-canonical-src="imgs/nosx_sz_results.png" width="400" />
 
 FID is 10.53 which is very better than the last configuration but still large.
 Linear Accuracy is 11.11%.
@@ -52,11 +52,11 @@ The results are again better than the last configuration. Note that in this conf
 
 ***Reconstructed images of each epoch:***
 
-<img src="imgs/sx_nosz.png" data-canonical-src="imgs/sx_nosz.png" height="200" />
+<img src="imgs/sx_nosz.png" data-canonical-src="imgs/sx_nosz.png" width="400" />
 
 ***Random generated images from a batch:***
 
-<img src="imgs/sx_nosz_results.png" data-canonical-src="imgs/sx_nosz_results.png" height="200" />
+<img src="imgs/sx_nosz_results.png" data-canonical-src="imgs/sx_nosz_results.png" width="400" />
 
 FID is 0.777 which is very good.
 Linear Accuracy is 12.41%.
@@ -68,11 +68,11 @@ The results are better than all the previous configuration. Here we are using al
 
 ***Reconstructed images of each epoch:***
 
-<img src="imgs/sx_sz.png" data-canonical-src="imgs/sx_sz.png" height="200" />
+<img src="imgs/sx_sz.png" data-canonical-src="imgs/sx_sz.png" width="400" />
 
 ***Random generated images from a batch:***
 
-<img src="imgs/sx_sz_results.png" data-canonical-src="imgs/sx_sz_results.png" height="200" />
+<img src="imgs/sx_sz_results.png" data-canonical-src="imgs/sx_sz_results.png" width="400" />
 
 FID is 0.3373 which is the best among all configurations.
 Linear Accuracy is 15.77%.
@@ -84,11 +84,11 @@ In the previous configurations, Sxz was left untouched. Here I have analyzed wha
 
 ***Reconstructed images of each epoch:***
 
-<img src="imgs/sx_sz.png" data-canonical-src="imgs/sx_sz.png" height="200" />
+<img src="imgs/sx_sz.png" data-canonical-src="imgs/sx_sz.png" width="400" />
 
 ***Random generated images from a batch:***
 
-<img src="imgs/sx_sz_results.png" data-canonical-src="imgs/sx_sz_results.png" height="200" />
+<img src="imgs/sx_sz_results.png" data-canonical-src="imgs/sx_sz_results.png" width="400" />
 
 FID is 5.81.
 Linear Accuracy is 10.72%.
@@ -96,4 +96,4 @@ Linear Accuracy is 10.72%.
 ---------------------------------------------------------------------
 The table below summarizes the findings of these experiments:
 
-<img src="imgs/table.png" data-canonical-src="imgs/table.png" height="200" />
+<img src="imgs/table.png" data-canonical-src="imgs/table.png" width="400" />
