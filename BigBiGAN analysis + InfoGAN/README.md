@@ -115,7 +115,7 @@ We can see that the FID and the quality of the reconstructed images depends on t
 
 We can also see that the Linear Accuracy also follows a similar rule, only except when neither Sx nor Sz is on. The reconstructed images were bad in that case and the generator's loss was 0, while the discriminator had not still converged and it could not even discriminate such bad images from the real ones. But the generated Z in that case had better patterns that caused higher linear accuracay.
 
-I think that I would need to train each configuration for more epochs to reach better and more trusted numbers. 
+I think that for Linear Accuracy I would need to train each configuration for more epochs to reach better and more trusted numbers. 
 
 -------------------------------
 --------------------------------
