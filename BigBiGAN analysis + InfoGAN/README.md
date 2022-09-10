@@ -1,11 +1,14 @@
-In the recent years, and after introducing the first Generative Adversarial Network, there has been many attempts at making the training of generative models more stable and their outputs more realistic. However, eventhough GAN produces better looking images than VAEs, it lags behind VAE in that it cannot encode real data (This is important because even when using Generative Models, our goal is often classification)
-In [BiGAN](https://arxiv.org/abs/1605.09782) paper, an extra encoder was trained alongside the generator and the discriminator to allow data encoding. However, BiGAN is an old paper, and it does not have the innovations of recent GAN works. Later, in [BigBiGAN](https://arxiv.org/abs/1907.02544) paper, the architecture of [BigGAN](https://arxiv.org/abs/1809.11096) and the idea of BiGAN were combined so the results looked great in addition to the possiblity to encode data. 
+In the first part of this project, I perform an analysis on different loss components of BigBiGAN. In the second part, I encorporate the idea of InfoGAN in BigBiGAN.
 
 ----------------------------------
 --------------------------------
 -------------------------------
 
 # Part 1 
+
+In the recent years, and after introducing the first Generative Adversarial Network, there has been many attempts at making the training of generative models more stable and their outputs more realistic. However, eventhough GAN produces better looking images than VAEs, it lags behind VAE in that it cannot encode real data (This is important because even when using Generative Models, our goal is often classification)
+In [BiGAN](https://arxiv.org/abs/1605.09782) paper, an extra encoder was trained alongside the generator and the discriminator to allow data encoding. However, BiGAN is an old paper, and it does not have the innovations of recent GAN works. Later, in [BigBiGAN](https://arxiv.org/abs/1907.02544) paper, the architecture of [BigGAN](https://arxiv.org/abs/1809.11096) and the idea of BiGAN were combined so the results looked great in addition to the possiblity to encode data. 
+
 In the first part of this project, I performed an in depth analysis of the elements present in BigBiGAN's loss function (See the figure below). 
 
 <img src="imgs/bigbiganloss.png" data-canonical-src="imgs/bigbiganloss.png" height="200" />
@@ -121,3 +124,27 @@ I think that for Linear Accuracy I would need to train each configuration for mo
 --------------------------------
 ----------------------------------
 # Part 2
+
+Eventhough the encoded representation in BiGAN and BiBiGAN is classifiable, the model does not explicitly know about the classes of the data. [InfoGAN](https://arxiv.org/abs/1606.03657) was proposed as a method for seperation of the data classes, and classification in GAN. In InfoGAN, the generator takes as input a class C in addition to Z and the discriminator tries to additionally predict the original C for fake data. The relationship between the reconstructed class and the input image helps the discriminator for better recognition. As a consequence, the generator would have to use C along the input image to make C easily recognizable for the discriminator while improving the quality of the generated fake image. 
+
+<img src="imgs/infogan_1.png" data-canonical-src="imgs/infogan_1.png" width="200" />
+
+In this part of the project I encorporated the idea of InfoGAN inside BigBiGAN by adding a C in the generator, and a classification head in the discriminator to the BigBiGAN of the first part.
+
+For evaluation, I reported FID and Inception Score. Also, I needed to perform Hungarian Matching, to find the true mapping between the reconstructed classes in the classification head and the true classes. (Each class is a worker, and each predicted C is a job, the cost of a job-worker pair is the number of rows that they both appear together (But negative since its a cost).)
+
+***The proposed architecture of InfoGAN on the BigBiGAN architecture:  *** 
+
+<img src="imgs/infogan.png" data-canonical-src="imgs/infogan.png" width="200" />
+
+Evaluation was done after 9 epochs:
+- FID is
+- Inception Score is 1.08
+- Linear Accuracy is 14.73%
+- Accuracy after Hungarian Matching is 11.62% and the best found mapping was [5,3,2,9,8,0,1,7,4,6] (It means if the predicted C is 5, we should consider it as a 0 digit)
+
+the figure bellow shows the generated images for each choice of C. It is evident that for the case of C=7, many of the images are actually 7, which is the case in the mapping as well.
+
+<img src="imgs/infogan_training.png" data-canonical-src="imgs/infogan_training.png" width="200" />
+
+I need to train for more epochs for achieving more pleasing results.
