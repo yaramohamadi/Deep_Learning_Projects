@@ -135,7 +135,7 @@ For evaluation, I reported FID and Inception Score. Also, I needed to perform Hu
 
 ***The proposed architecture of InfoGAN on the BigBiGAN architecture:  *** 
 
-<img src="imgs/infogan.png" data-canonical-src="imgs/infogan.png" width="200" />
+<img src="imgs/infogan.png" data-canonical-src="imgs/infogan.png" width="400" />
 
 Evaluation was done after 9 epochs:
 - FID is
@@ -145,6 +145,6 @@ Evaluation was done after 9 epochs:
 
 the figure bellow shows the generated images for each choice of C. It is evident that for the case of C=7, many of the images are actually 7, which is the case in the mapping as well.
 
-<img src="imgs/infogan_training.png" data-canonical-src="imgs/infogan_training.png" width="200" />
+<img src="imgs/infogan_training.png" data-canonical-src="imgs/infogan_training.png" width="400" />
 
 I need to train for more epochs for achieving more pleasing results.
