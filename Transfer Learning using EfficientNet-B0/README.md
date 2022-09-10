@@ -13,13 +13,15 @@ In this step, I took the model after step 1 and further finetuned the model. But
 (I used the best weights from step 1, and used a smaller learning rate)
 
 As you can see in the figure bellow, the top 1 and top 3 test accuracies are respectively 0.68 and 0.87 which is remarkably higher than the first step.
-![2_unfreeze_all_layers](src/2_unfreeze_all_layers.png)
+
+<img src="src/2_unfreeze_all_layers.png" data-canonical-src="src/2_unfreeze_all_layers.png" height="250" />
 
 ### 2_2 - Further finetuning by unfreezing only the 6th and 7th convolutional blocks
 In this step, similarily I took the model after step 1 and further finetuned the model. But this time by unfreezing only the 6th and 7th Conv blocks and freezing the rest of the network.
 
 As you can see in the figure bellow, the top 1 and top 3 test accuracies are respectively 0.62 and 0.83 which is a little lower than ***step 2_1*** but still quite high.
-![3_unfreeze_layers_6_7](src/3_unfreeze_layers_6_7.png)
+
+<img src="src/3_unfreeze_layers_6_7.png" data-canonical-src="src/3_unfreeze_layers_6_7.png" height="250" />
 
 ### Conclusion
 
