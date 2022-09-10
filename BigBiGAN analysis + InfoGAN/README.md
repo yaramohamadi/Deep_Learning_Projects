@@ -1,6 +1,11 @@
 In the recent years, and after introducing the first Generative Adversarial Network, there has been many attempts at making the training of generative models more stable and their outputs more realistic. However, eventhough GAN produces better looking images than VAEs, it lags behind VAE in that it cannot encode real data (This is important because even when using Generative Models, our goal is often classification)
 In [BiGAN](https://arxiv.org/abs/1605.09782) paper, an extra encoder was trained alongside the generator and the discriminator to allow data encoding. However, BiGAN is an old paper, and it does not have the innovations of recent GAN works. Later, in [BigBiGAN](https://arxiv.org/abs/1907.02544) paper, the architecture of [BigGAN](https://arxiv.org/abs/1809.11096) and the idea of BiGAN were combined so the results looked great in addition to the possiblity to encode data. 
 
+----------------------------------
+--------------------------------
+-------------------------------
+
+# Part 1 
 In the first part of this project, I performed an in depth analysis of the elements present in BigBiGAN's loss function (See the figure below). 
 
 <img src="imgs/bigbiganloss.png" data-canonical-src="imgs/bigbiganloss.png" height="200" />
@@ -111,3 +116,8 @@ We can see that the FID and the quality of the reconstructed images depends on t
 We can also see that the Linear Accuracy also follows a similar rule, only except when neither Sx nor Sz is on. The reconstructed images were bad in that case and the generator's loss was 0, while the discriminator had not still converged and it could not even discriminate such bad images from the real ones. But the generated Z in that case had better patterns that caused higher linear accuracay.
 
 I think that I would need to train each configuration for more epochs to reach better and more trusted numbers. 
+
+-------------------------------
+--------------------------------
+----------------------------------
+# Part 2
