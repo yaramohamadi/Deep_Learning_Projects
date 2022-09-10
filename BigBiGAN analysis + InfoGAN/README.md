@@ -9,6 +9,7 @@ I used the MNIST dataset and tried turning off each of the loss elements Sx, Sz,
 
 12 epochs
 
+---------------------------------------------------------------------
 ### Sx off, Sz off
 The learning is very unstable in this configuration. In some epochs, the generator loss would reach zero while the discriminator loss would reach around 40.
 
@@ -28,7 +29,7 @@ Linear Accuracy is 18.20%.
 
 
 
-
+---------------------------------------------------------------------
 ### Sx off, Sz on
 The results are a little better in this configuration. However, Sx is the most important part of the loss, and without that we are telling the model that we don't care how similar should the generated image be to the original image, and its possible that we reach a reconstructed digit that is different than the original one!
 
@@ -45,7 +46,7 @@ Linear Accuracy is 11.11%.
 
 
 
-
+---------------------------------------------------------------------
 ### Sx on, Sz off
 
 The results are again better than the last configuration. Note that in this configuration, matching the generated X with the real X is much more important than matching Z.
@@ -62,7 +63,7 @@ FID is 0.777 which is very good.
 Linear Accuracy is 12.41%.
 
 
-
+---------------------------------------------------------------------
 ### Sx on, Sz on
 The results are better than all the previous configuration. Here we are using all elements of the BigBiGAN loss function.
 
@@ -78,6 +79,7 @@ FID is 0.3373 which is the best among all configurations.
 Linear Accuracy is 15.77%.
 Inception Score is 1.165.
 
+---------------------------------------------------------------------
 ### Sx on, Sz on, Sxz off
 
 In the previous configurations, Sxz was left untouched. Here I have analyzed what happens if we take out Sxz. It seems that the use of Sxz is not critical, but it affects the final performance.
