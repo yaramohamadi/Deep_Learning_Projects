@@ -6,7 +6,7 @@ In the first step, I freezed all layers but the last fully connected layers and 
 
 As evident in the figure bellow, the top 1 accuracy on the test set is 0.33, and the top 3 accuracy is 0.55. The model has started overfitting after epoch 20.
 
-![1_finetuning](src/1_finetuning.png)
+<img src="src/1_finetuning.png" data-canonical-src="src/1_finetuning.png" height="100" />
 
 ### 2_1 - Further finetuning by unfreezing all layers
 In this step, I took the model after step 1 and further finetuned the model. But this time I unfroze every layer and let the weights of all layers change.
