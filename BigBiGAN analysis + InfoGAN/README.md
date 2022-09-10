@@ -5,9 +5,13 @@ In the first part of this project, I performed an in depth analysis of the eleme
 
 <img src="imgs/bigbiganloss.png" data-canonical-src="imgs/bigbiganloss.png" height="200" />
 
-I used the MNIST dataset and tried turning off each of the loss elements Sx, Sz, and Sxz, hence gaining an intuition on the effect of each one in the final performance.
+The evaluation metrics I used are:
+- Linear Accuracy: KNN(n=3) prediction on the encoded representations.
+- Fréchet inception distance (FID): FID score between a random batch of 256 original images and a random batch of 256 generated images.
+- Inception Score: Used a inception_v3 model pretrained on Imagenet, and a batch of 256 images to derive the score. 
 
-12 epochs
+
+I used the MNIST dataset and tried turning off each of the loss elements Sx, Sz, and Sxz, hence gaining an intuition on the effect of each one in the final performance.
 
 ---------------------------------------------------------------------
 ### Sx off, Sz off
