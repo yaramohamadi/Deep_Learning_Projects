@@ -1,5 +1,5 @@
 EfficientNet-B0 is a CNN from the [EfficientNet](https://arxiv.org/pdf/1905.11946.pdf) family. These models are created for image classification and differ in number of parameters. In this project, I take an EfficientNet-B0 pretrained on ImageNet and use it for classification on the [Stanford Cars dataset - car196](https://ai.stanford.edu/~jkrause/cars/car_dataset.html) dataset. I use the [NoisyStudent](https://keras.io/examples/vision/image_classification_efficientnet_fine_tuning/#using-the-latest-efficientnet-weights) model weights for better accuracy for the Transfer Learning. 
-I perform transfer learrning in 3 steps to gain more intuition on how this knowledge transfer works.
+I perform transfer learrning in 2 configurations to gain more intuition on how knowledge transfer works and how transferable are the features of each layer.
 
 ### 1 - Finetuning by freezing all layers
 In the first step, I freezed all layers but the last fully connected layers and trained the pretrained model on the new dataset.
