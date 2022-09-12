@@ -9,6 +9,7 @@ Embedding size was changed from 512 to 256, trained for 30 epochs only, learning
 
 ***Evaluation on DigiKala***:
 
+
 |      |  |
 | ------------- | ------------- |
 | Reconstruction loss | 35.2613  |
@@ -19,12 +20,14 @@ Embedding size was changed from 512 to 256, trained for 30 epochs only, learning
 | mi  | 4.0601  |
 
 ***Reconstruction of Digikala reviews:***
+
 Despite the complexities of spoken Persian language, the model can reconstruct the sentences in an acceptable way. The model is also creating diverse sentences and is avoiding generic, obvious, and repeated reviews.
 
 <img src="imgs/persian.png" data-canonical-src="imgs/persian.png" width="400" />
 
 
 ***Reconstruction of Yahoo reviews:***
+
 The figure bellow shows that the reconstructed Persian sentences are as good as the English sentencs.
 <img src="imgs/yahoo.png" data-canonical-src="imgs/yahoo.png" width="400" />
 
