@@ -36,7 +36,7 @@ In Gaussian and Graysale modes, Finetuned VGG has outperformed our model (Autoen
 
 In this part, I used a PixelCNN auto-regressive generative model for the pretext. In the training, In the first mode, I tried give the model only the upper half of the images and to generate the full image in the output. In the second mode, I gave the model the original image, and tried to reconstruct it again.
 
-The figure below shows the image reconstruction in the training.
+The figure below shows the image reconstruction in the first training mode.'
 
 <img src="imgs/4.png" data-canonical-src="imgs/4.png" width="200" />
 
