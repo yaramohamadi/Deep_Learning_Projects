@@ -2,7 +2,7 @@
 Some of my Deep Learning projects in applications of vision and NLP in the subjects of self-supervised learning, generative models, and embeddings.
 
 ### Self-Supervised Learning:
-- [Autoencoders and PixelCNN for Downstream Tasks](https://github.com/yaramohamadi/Deep_Learning_Projects/tree/main/Autoencoders%20and%20PixelCNN%20for%20Downstream%20Taskss)
+- [Autoencoders and PixelCNN for Downstream Tasks](https://github.com/yaramohamadi/Deep_Learning_Projects/tree/main/Autoencoders%20and%20PixelCNN%20for%20Downstream%20Tasks)
 - [Contrastive Predictive Coding](https://github.com/yaramohamadi/Deep_Learning_Projects/tree/main/Contrastive%20Predictive%20Coding)
 - [SimCLR Analysis](https://github.com/yaramohamadi/Deep_Learning_Projects/tree/main/SimCLR%20analysis)
 - [Unsupervised Representation Learning via Rotation Prediction](https://github.com/yaramohamadi/Deep_Learning_Projects/tree/main/Unsupervised%20Representation%20Learning)
