@@ -8,16 +8,16 @@ I trained a Convolutional Autoencoder with 3 blocks of Conv2d+MaxPool in the enc
 
 From left to right, the reconstructed image, the augmented input image, and the original input image
 
-<img src="imgs/1.png" data-canonical-src="imgs/1.png" width="400" />
+<img src="imgs/1.png" data-canonical-src="imgs/1.png" width="200" />
 
 - Converting Gray scale to RGB
 
 MSE loss has a hard time with colors.
-<img src="imgs/2.png" data-canonical-src="imgs/2.png" width="400" />
+<img src="imgs/2.png" data-canonical-src="imgs/2.png" width="200" />
 
 - Solving the image's JIGSAW puzzle
 
-<img src="imgs/3.png" data-canonical-src="imgs/3.png" width="400" />
+<img src="imgs/3.png" data-canonical-src="imgs/3.png" width="200" />
 
 I made 4 patches from the images and shuffled them. The model cannot reconstruct the images, since its a shallow and simple network.
 The loss I used is MSE, which is not ideal especially when dealing with colors.
