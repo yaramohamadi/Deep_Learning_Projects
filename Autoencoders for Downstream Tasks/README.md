@@ -13,6 +13,7 @@ From left to right, the reconstructed image, the augmented input image, and the 
 - Converting Gray scale to RGB
 
 MSE loss has a hard time with colors.
+
 <img src="imgs/2.png" data-canonical-src="imgs/2.png" width="200" />
 
 - Solving the image's JIGSAW puzzle
@@ -32,3 +33,15 @@ In Gaussian and Graysale modes, Finetuned VGG has outperformed our model (Autoen
 
 
 # Part 2
+
+In this part, I used a PixelCNN auto-regressive generative model for the pretext. In the training, I tried to predict the lower half of the image from the upper half.
+
+The figure below shows the image reconstruction in the training.
+
+<img src="imgs/4.png" data-canonical-src="imgs/4.png" width="200" />
+
+The figure below shows some generated images using the created PixelCNN.
+
+<img src="imgs/5.png" data-canonical-src="imgs/5.png" width="200" />
+<img src="imgs/6.png" data-canonical-src="imgs/6.png" width="200" />
+
