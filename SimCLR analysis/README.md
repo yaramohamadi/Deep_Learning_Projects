@@ -30,3 +30,5 @@ The results are in the table below:
 <img src="imgs/4.png" data-canonical-src="imgs/4.png" width="400" />
 
 Choosing a correct Augmentation technique can help obtaining a better representation. However it is not that effective! Also removing the hardest negative pair results in worse performance. Because in self-supervised learning, the hard-negative pairs are crucial and important in achieving good results.
+
+Note that due to computational limits, training was only done for 20 epochs. In case of training for more epochs, better results can be achieved.
