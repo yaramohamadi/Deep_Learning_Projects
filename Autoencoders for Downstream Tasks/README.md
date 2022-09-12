@@ -52,6 +52,6 @@ The figures below shows some generated images using the created PixelCNN.
 
 The table below shows the evaluation result using PixelCNN. I took the decoder's output and passed it on finetuned ResNet18 for classification. We can see that the second mode is better:
 
-<img src="imgs/table2.png" data-canonical-src="imgs/table2.png" width="200" />
+<img src="imgs/table2.png" data-canonical-src="imgs/table2.png" width="400" />
 
 
