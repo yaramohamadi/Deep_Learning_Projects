@@ -1,4 +1,4 @@
-In this project, I compare performing downstream tasks by adding a linear classifier to the learnt representation with finetuned VGG16 or ResNet18 models. In the first part, I use an autoencoder as a pretext model to learn the representatations in a self-supervised fashion. In the second part I use PixelCNN auto-regressive generative model for the pretext.
+In this project, I compare performing downstream tasks in self-supervised learning by adding a linear classifier to the learnt representation with finetuned VGG16 or ResNet18 models. In the first part, I use an autoencoder as a pretext model to learn the representatations in a self-supervised fashion. In the second part I use PixelCNN auto-regressive generative model for the pretext.
 
 # Part 1 
 
