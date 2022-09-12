@@ -1,4 +1,4 @@
-In this project, I compare performing downstream tasks in self-supervised learning by adding a linear classifier to the learnt representation with finetuned VGG16 or ResNet18 models. In the first part, I use an autoencoder as a pretext model to learn the representatations in a self-supervised fashion. In the second part I use PixelCNN auto-regressive generative model for the pretext.
+In this project, I perform downstream tasks in self-supervised learning. In the first part, I use an autoencoder as a pretext model to learn the representatations in a self-supervised fashion. In the second part I use PixelCNN auto-regressive generative model for the pretext.
 
 # Part 1 
 
@@ -25,7 +25,7 @@ The loss I used is MSE, which is not ideal especially when dealing with colors.
 
 ### Results
 
-For evaluation I added a linear classifier to the self-supervised learnt representation. I compared the classification downstream task performance with the performance of a finetuned VGG16 and ResNet18 network.
+For evaluation I added a linear classifier to the self-supervised learnt representation. I compared the classification downstream task performance with the performance of inputting the generated decoder image to a finetuned VGG16 and ResNet18 network.
 In Gaussian and Graysale modes, Finetuned VGG has outperformed our model (Autoencoder Representation + Linear classifier)
 . However in Jigsaw puzzle mode our model is better than both VGG and ResNet.
 
@@ -34,14 +34,24 @@ In Gaussian and Graysale modes, Finetuned VGG has outperformed our model (Autoen
 
 # Part 2
 
-In this part, I used a PixelCNN auto-regressive generative model for the pretext. In the training, I tried to predict the lower half of the image from the upper half.
+In this part, I used a PixelCNN auto-regressive generative model for the pretext. In the training, In the first mode, I tried give the model only the upper half of the images and to generate the full image in the output. In the second mode, I gave the model the original image, and tried to reconstruct it again.
 
 The figure below shows the image reconstruction in the training.
 
 <img src="imgs/4.png" data-canonical-src="imgs/4.png" width="200" />
 
-The figure below shows some generated images using the created PixelCNN.
+The figures below shows some generated images using the created PixelCNN.
+
+- First mode
 
 <img src="imgs/5.png" data-canonical-src="imgs/5.png" width="200" />
+
+- Second mode
+
 <img src="imgs/6.png" data-canonical-src="imgs/6.png" width="200" />
+
+The table below shows the evaluation result using PixelCNN. I took the decoder's output and passed it on finetuned ResNet18 for classification. We can see that the second mode is better:
+
+<img src="imgs/table2.png" data-canonical-src="imgs/table2.png" width="200" />
+
 
