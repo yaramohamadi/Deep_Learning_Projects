@@ -1,5 +1,5 @@
 # Deep_Learning_Projects
-Some of my Deep Learning projects in applications of vision and NLP in the subjects of self-supervised learning, generative models, and embeddings.
+Some of my Deep Learning projects around Self-Supervised Learning, Generative Models, and Embeddings in applications of vision and NLP.
 
 ### Self-Supervised Learning:
 - [Autoencoders and PixelCNN for Downstream Tasks](https://github.com/yaramohamadi/Deep_Learning_Projects/tree/main/Autoencoders%20and%20PixelCNN%20for%20Downstream%20Tasks)
