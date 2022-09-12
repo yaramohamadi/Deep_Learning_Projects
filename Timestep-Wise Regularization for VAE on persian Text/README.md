@@ -9,6 +9,7 @@ Embedding size was changed from 512 to 256, trained for 30 epochs only, learning
 
 ***Evaluation on DigiKala***:
 
+|      |  |
 | ------------- | ------------- |
 | Reconstruction loss | 35.2613  |
 | KL loss  | 1.1558  |
