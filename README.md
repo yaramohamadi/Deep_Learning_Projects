@@ -14,4 +14,4 @@ Some of my Deep Learning projects around Self-Supervised Learning, Generative Mo
 ### Embedding:
 - [Visual Question Answering](https://github.com/yaramohamadi/Deep_Learning_Projects/tree/main/Visual_question_answering)
 - [Transfer Learning using EfficientNet-B0](https://github.com/yaramohamadi/Deep_Learning_Projects/tree/main/Transfer%20Learning%20using%20EfficientNet-B0)
-
+- [Multimodal Movie Genre Classification](https://github.com/yaramohamadi/Cafe_Bazaar_Movie_genre_prediction)
