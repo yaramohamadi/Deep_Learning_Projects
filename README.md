@@ -11,10 +11,17 @@ Some of my Deep Learning projects around Self-Supervised Learning, Generative Mo
 - [Timestep-Wise Regularization for VAE on Persian Text](https://github.com/yaramohamadi/Deep_Learning_Projects/tree/main/Timestep-Wise%20Regularization%20for%20VAE%20on%20persian%20Text)
 - [BigBiGAN analysis + Combining it with InfoGAN](https://github.com/yaramohamadi/Deep_Learning_Projects/tree/main/BigBiGAN%20analysis%20%2B%20InfoGAN)
 
-### Embedding:
+### Embeddings:
 - [Visual Question Answering](https://github.com/yaramohamadi/Deep_Learning_Projects/tree/main/Visual_question_answering)
 - [Transfer Learning using EfficientNet-B0](https://github.com/yaramohamadi/Deep_Learning_Projects/tree/main/Transfer%20Learning%20using%20EfficientNet-B0)
 - [Multimodal Movie Genre Classification](https://github.com/yaramohamadi/Cafe_Bazaar_Movie_genre_prediction)
 
+### Trustworthiness:
+- [Adverserial Training vs. Angular Loss for Robust Classification](https://github.com/yaramohamadi/Adversarial_Angular)
+- [Analysis of SHAP LIME and D-RISE Explanations]
+- [SHAP Explanations for Life Expectancy Prediction]
+- [D-RISE Saliency Map Explanations for Object Detection]
+- [LIME Explanations for Image Classificattion]
+
 ### Vision:
-- [Efficient Instance Segmentation of pathology images via Patch-Based CNN](https://github.com/yaramohamadi/dermo-segmentation)
+- [Efficient Instance Segmentation of pathology images via Patch-Based CNN](https://github.com/yaramohamadi/dermo-segmentation) (Related to my bachelor's thesis)
