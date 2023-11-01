@@ -17,11 +17,9 @@ Some of my Deep Learning projects around Self-Supervised Learning, Generative Mo
 - [Multimodal Movie Genre Classification](https://github.com/yaramohamadi/Cafe_Bazaar_Movie_genre_prediction)
 
 ### Trustworthiness:
-- [Adverserial Training vs. Angular Loss for Robust Classification](https://github.com/yaramohamadi/Adversarial_Angular)
-- [Analysis of SHAP LIME and D-RISE Explanations]
-- [SHAP Explanations for Life Expectancy Prediction]
-- [D-RISE Saliency Map Explanations for Object Detection]
-- [LIME Explanations for Image Classificattion]
+- [Adverserial Training vs. Angular Loss for Robust Classification](https://github.com/yaramohamadi/Deep_Learning_Projects/tree/main/Adverserial%20Training%20vs.%20Angular%20Loss%20for%20Robust%20Classification)
+- [SHAP, LIME, and D-RISE Explanations](https://github.com/yaramohamadi/Deep_Learning_Projects/blob/main/Analysis%20of%20SHAP,%20LIME%20and%20D-RISE%20Explanations/README.md)
+- [Backdoor attacks and OOD detection]
 
 ### Vision:
 - [Efficient Instance Segmentation of pathology images via Patch-Based CNN](https://github.com/yaramohamadi/dermo-segmentation) (Related to my bachelor's thesis)
