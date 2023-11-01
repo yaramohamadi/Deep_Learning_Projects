@@ -1,15 +1,15 @@
 This project includes analysis of three explainabiliy methods in different applications as follows:
 
-- SHAP Explanations for Life Expectancy Prediction
-- LIME Explanations for Image Classificattion
-- D-RISE Saliency Map Explanations for Object Detection
+- SHAP for Life Expectancy Prediction
+- LIME for Image Classificattion
+- D-RISE Saliency Maps for Object Detection
 
 
-# SHAP Explanations for Life Expectancy Prediction
+# SHAP for Life Expectancy Prediction
 
-# LIME Explanations for Image Classificattion
+# LIME for Image Classificattion
 
-# D-RISE Saliency Map Explanations for Object Detection
+# D-RISE Saliency Maps for Object Detection
 
 
 
